@@ -1,0 +1,45 @@
+
+Codebook - Getting and Cleaning Data Project
+========
+
+Codebook was generated on 'r as.character(Sys.time())'. See also Readme.md for details of how this project was produced. 
+
+The units of interest in this study are identifies according as according to the following variables: 
+
+Subject: each subject has a unique subject identification number.
+Activity: each subject was tested under the following conditions: 
+        Walking
+        Walking Upstairs
+        Walking Downstairs
+        Sitting
+        Standing
+        Laying
+
+
+Measurement variables of the tidyData dataset
+        ------------------------
+
+For each subject/activity pair, the following measurements were taken. These measurements correspond to the column heacings in the tidyData dataset:
+```{r, echo=FALSE}
+names(tidyDataMeans)
+```
+
+
+Structure of the tidyData dataset
+        ------------------------
+```{r, echo=FALSE}
+str(tidyDataMeans)
+```
+
+Example rows of the tidyData dataset
+------------------------
+```{r, echo=FALSE}
+head(tidyDataMeans, n=5)
+```
+
+Summary of variables of the tidyData dataset
+        ------------------------
+```{r, echo=FALSE}
+summary(tidyDataMeans)
+```
+
